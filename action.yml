@@ -1,0 +1,16 @@
+name : 'Invite User'
+description : 'Invites user into a Github Organisation'
+inputs:
+  EMAIL:
+    description: 'Email ID of the user to be invited to Github Organisation'
+    required : true
+    
+  ADMIN_PAT: 
+    description : 'Personal Access Token of the user for authentication'
+    required : true
+    
+outputs:
+  message:
+    description: 'Message output. Can be of action taken or an error message'
+  stepStatus:
+    description: 'Value should be success or failed'
